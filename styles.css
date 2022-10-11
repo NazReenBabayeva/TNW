@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@500&family=Josefin+Sans:wght@700&family=Pacifico&family=Poppins&family=Sacramento&display=swap');
+
+* {
+  margin: 0%;
+  /* outline: 1px solid red; */
+}
+
+
+.header {
+  background: rgb(227, 166, 101);
+  background: linear-gradient(117deg, rgba(227, 166, 101, 1) 11%, rgba(96, 93, 89, 0.989233193277311) 57%, rgba(73, 172, 195, 1) 100%);
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 60%;
+  gap: 40px;
+  padding-top: 10%;
+}
+
+.logo {
+  display: flex;
+  padding-left: 4%;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+  font-size: 1.8rem;
+}
+
+a:hover {
+  color: rgb(150, 137, 119);
+}
+
+
+
+a {
+  display: flex;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: rgb(235, 232, 228);
+  letter-spacing: 0.5px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(253, 252, 250);
+  height: 2px;
+  width: 0%;
+  left: 0;
+  right: 56;
+  bottom: -10px;
+  transition: 0.4s;
+
+
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+
+
+section.section {
+  display: flex;
+  padding: 7% 3%;
+}
+
+
+section .left-side {
+  flex-basis: 60%;
+}
+
+
+
+
+section .left-side h1 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+section .left-side em  {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+section.right-side {
+  flex: 1;
+}
+
+section .right-side img {
+  width: 100%;
+
+
+}
+
+
+h3 {
+ text-align: center;
+  justify-content: space-around;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  padding: 3%
+}
+
+.hr-one {
+  height: 10px;
+  border: 10;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(184, 131, 33), rgb(86, 94, 94),
+      rgb(106, 176, 209))
+}
+
+
+
+.bar {
+  display: none;
+}
+
+
+
+@media(max-width:768px) {
+  .bar {
+    display: flex;
+    font-size: 65px;
+    color: rgb(243, 245, 247);
+    cursor: pointer;
+  }
+
+
+  .header nav {
+    display: none;
+  }
+
+ 
+}
+
+
+
+
+
